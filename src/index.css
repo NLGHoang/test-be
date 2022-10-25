@@ -1,13 +1,33 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section {
+  padding: 3rem 0;
+  height: 100vh;
+  position: relative;
+  z-index: 90;
+}
+
+.heading {
+  padding-left: 4px;
+  font-size: 17px;
+  color: #04004d;
+  font-weight: 500;
+}
+
+.question {
+  margin: 1.5rem 1rem;
+  font-size: 17px;
+  color: #004dff;
+  font-weight: 500;
+}
+
+.items {
+  padding: 0.3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 0.5rem;
 }
